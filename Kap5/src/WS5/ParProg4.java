@@ -13,6 +13,9 @@
 			 * @param args
 			 */
 	public static Scanner in = new Scanner(System.in);
+	static double summa =0.0;
+	static double största = 0.0;
+	static double minsta = 0.0;
 
 	public static double tal(double a, double b, double c) {
 		double summa = a + b + c;
@@ -36,36 +39,24 @@
 		}
 		
 		if ("Stop".equals(s.trim()) || "Avsluta".equals(s.trim())) {
-								System.out.println("Avslutar");
-								boolean avslutar = true;
-							} else {
-								System.out.println("Fel, mata in ett nytt tal");
-								System.out.print("Mata in ett tal: ");}
-
-
-
-				
-						while ( ! avsluta && ! in.hasNextDouble()) {
-							
-						
-			
-					
-				
-				
-								
-			}
+			System.out.println("Avslutar");
+			boolean avslutar = true;
+		} else {
+		System.out.println("Fel, mata in ett nytt tal");
+		System.out.print("Mata in ett tal: ");
+		}
+		while ( ! avsluta && ! in.hasNextDouble()) {
+		}
+		return 0.0;
 
 	public static void main(String[] args) {
 		System.out.println("Mata in flyttal tills du skriver in Stop eller Avsluta");
 		System.out.println("För varje tal skriver du ut den accumulativa summan");
 		System.out.println("samt det så långt minsta och största talet");
-
 		System.out.printf("Summa %f, Min %f Max %f%n", summa, minsta, största);
-		
-	
 		System.out.printf("Summa %f, Min %f Max %f%n",summa,minsta,största);
-
 		System.out.println("Tack för att du använt programmet");
+		
 		in.close();
 		System.exit(0);
 		}
