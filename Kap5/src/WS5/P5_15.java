@@ -26,12 +26,8 @@ public class P5_15 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Skriv ett ord: ");
-		
 		String ord = reverse(input.next());
-		
 		System.out.println(ord);
-		
 		input.close();
 	}
-
 }

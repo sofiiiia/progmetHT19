@@ -24,8 +24,8 @@ public class P5_2 {
 	}
 
 	public static boolean sorted(double x, double y, double z) {
-		if(x<y) { 
-			if(y<z) {
+		if(x<=y) { 
+			if(y<=z) {
 				return true;
 			}else return false;
 		}
