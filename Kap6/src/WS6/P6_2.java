@@ -15,7 +15,7 @@ public class P6_2 {
 	/**
 	 * @param args
 	 */
-	public static int [] byteAvFörstaOchSista(int[] heltalArray) {
+	public static int[] byteAvFörstaOchSista(int[] heltalArray) {
 		
 		int första = heltalArray [0];
 		heltalArray [0] = heltalArray [heltalArray.length-1];
@@ -25,23 +25,24 @@ public class P6_2 {
 		
 	}
 	
-	public static int [] flyttaHöger(int [] arr) {
+	public static int[] flyttaHöger(int[] arr) {
 		
-		int första  = arr [0];
-		for(int i = 1; i < arr.length; i++ ) {
-			arr[i-1] = arr[i];
+		int sista  = arr[arr.length-1];
+		for(int i = arr.length-1; i > 0; i-- ) {
+			arr[i] = arr[i-1];
 		}
-		arr [arr.length-1]= första;
+		arr[0] = sista;
 		return arr;
 	}
 	
 	public static void main(String[] args) {
-		int [] tal = {1,2,3,4,5,6,7,8,9};
-		int [] nyArray = byteAvFörstaOchSista(tal);
+		int[] tal = {1,2,3,4,5,6,7,8,9};
+		System.out.println(Arrays.toString(tal));
+		int[] swopped = byteAvFörstaOchSista(tal.clone());
 	
-		System.out.println(Arrays.toString(nyArray));
+		System.out.println(Arrays.toString(swopped));
 		
-		
+		System.out.println(Arrays.toString(flyttaHöger(tal.clone())));
 		
 	}
 
