@@ -1,4 +1,10 @@
 package soag01;
+/**
+ * 
+ * @author Sofia Ågren
+ * @version 2019-10-25
+ *
+ */
 
 public class Bug {
 
@@ -14,11 +20,13 @@ public class Bug {
 	}
 
 	public void move() {
+		System.out.println("Bugsy says 'I am here': " + initialPosition);
 		if (moveRight == true) {
 			initialPosition++;
 		} else {
 			initialPosition--;
 		}
+		//System.out.println(initialPosition);
 	}
 
 	public int getPosition() {

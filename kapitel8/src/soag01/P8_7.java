@@ -6,7 +6,8 @@ package soag01;
 import java.util.Scanner;
 
 /**
- * @author Sofia
+ * @author Sofia Ågren
+ * @version 2019-10-23
  *
  */
 public class P8_7 {
@@ -27,9 +28,9 @@ public class P8_7 {
 		student.addQuizScore(100);
 		student.addQuizScore(100);
 		student.addQuizScore(100);
-		System.out.println(student.getTotalScore()+ " " + student.getAverageScore() );
+		System.out.println(student.getTotalScore() + " " + student.getAverageScore());
 		input.close();
-		
+
 	}
 
 }

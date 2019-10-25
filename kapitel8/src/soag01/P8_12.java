@@ -4,7 +4,8 @@
 package soag01;
 
 /**
- * @author Sofia
+ * @author Sofia Ågren
+ * @version 2019-10-25
  *
  */
 public class P8_12 {
@@ -21,6 +22,6 @@ public class P8_12 {
 		bugsy.turn();
 		bugsy.move();
 		bugsy.move();
-		System.out.println("The position is: " + bugsy.getPosition());
+		System.out.println("The final position of Bugsy is: " + bugsy.getPosition());
 	}
 }

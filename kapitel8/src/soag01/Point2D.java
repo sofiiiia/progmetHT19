@@ -1,4 +1,10 @@
 package soag01;
+/**
+ * 
+ * @author Sofia Ågren
+ * @version 2019-10-21
+ *
+ */
 
 public class Point2D {
 	

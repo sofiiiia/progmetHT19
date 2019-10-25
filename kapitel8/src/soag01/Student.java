@@ -1,4 +1,10 @@
 package soag01;
+/**
+ * 
+ * @author Sofia Ågren
+ * @version 2019-10-23
+ *
+ */
 
 public class Student {
 
@@ -16,8 +22,8 @@ public class Student {
 	public String getName() {
 		return namn;
 	}
-	public double getTotalScore() {
-		return totalScore;
+	public int getTotalScore() {
+		return (int)totalScore;
 	}
 	public double getAverageScore() {
 		return  totalScore/numberOfQuiz; 

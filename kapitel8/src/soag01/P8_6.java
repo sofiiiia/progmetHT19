@@ -6,7 +6,8 @@ package soag01;
 import java.util.Scanner;
 
 /**
- * @author Sofia
+ * @author Sofia Ågren
+ * @version 2019-10-23
  *
  */
 public class P8_6 {
